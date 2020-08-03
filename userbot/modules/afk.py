@@ -77,7 +77,7 @@ async def mention_afk(mention):
                         f"\nAFK since: {afk_str}"
                     )
                 else:
-                    await mention.reply(AFKSTR)
+                    await mention.reply(str(choice(AFKSTR)))
                 USERS.update({mention.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
             elif mention.sender_id in USERS:
@@ -89,7 +89,7 @@ async def mention_afk(mention):
                             f"\nAFK from: {afk_str}"
                         )
                     else:
-                        await mention.reply(AFKSTR)
+                        await mention.reply(str(choice(AFKSTR)))
                     USERS[mention.sender_id] = USERS[mention.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
                 else:
@@ -158,7 +158,7 @@ async def afk_on_pm(sender):
                         f"\nAFK since: {afk_str}"
                     )
                 else:
-                    await sender.reply(AFKSTR)
+                    await sender.reply(str(choice(AFKSTR)))
                 USERS.update({sender.sender_id: 1})
                 COUNT_MSG = COUNT_MSG + 1
             elif apprv and sender.sender_id in USERS:
@@ -170,7 +170,7 @@ async def afk_on_pm(sender):
                             f"\nAFK from: {afk_str}"
                         )
                     else:
-                        await sender.reply(AFKSTR)
+                        await sender.reply(str(choice(AFKSTR)))
                     USERS[sender.sender_id] = USERS[sender.sender_id] + 1
                     COUNT_MSG = COUNT_MSG + 1
                 else:
