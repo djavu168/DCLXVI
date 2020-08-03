@@ -23,7 +23,8 @@ from userbot import (
 from userbot.events import register
 
 # ========================= CONSTANTS ============================
-AFKSTR = [
+AFKSTR = ("I'm away right now. If you need anything, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!")
+[
     "I'm busy right now. Please talk in a bag and when I come back you can just give me the bag!",
     "I'm away right now. If you need anything, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!",
     "You missed me, next time aim better.",
