@@ -152,8 +152,8 @@ async def afk_on_pm(sender):
                 afk_str = f"`{int(seconds)}s` ago"
             if sender.sender_id not in USERS:
                 if AFKREASON:
-                    await sender.reply(
-                        "I'm AFK right now."
+                    await sender.reply(AFKSTR)(
+                        "I'm Busy :)."
                         f"\nReason: `{AFKREASON}`."
                         f"\nAFK since: {afk_str}"
                     )
@@ -165,7 +165,7 @@ async def afk_on_pm(sender):
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await sender.reply(
-                            "I'm still AFK."
+                            "I'm still Busy :)."
                             f"\nReason: `{AFKREASON}`."
                             f"\nAFK from: {afk_str}"
                         )
