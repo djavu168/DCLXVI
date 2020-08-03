@@ -22,10 +22,10 @@ from userbot.events import register
 
 # ========================= CONSTANTS ============================
 UNAPPROVED_MSG = (
-    "`Ini BOT ye, gue lagi gak on sekarang. Tunggu aja dulu\n\n`"
-    "`Sabarrrr, nanti diapprove. Orang Sabar disayang Janda`"
+    "`Ini BOT, gue lagi gak on sekarang. Tunggu aja dulu\n\n`"
+    "`Sabarrrr, nanti diapprove.Orang Sabar disayang Janda\n`"
     "`Ngopi aja dulu sambil nunggu dibales.\n\n`"
-    "`Jangan spam, tar ke blok xD`" 
+    "`Jangan spam, nanti ke blok lu xD`" 
 )
 
 # =================================================================
