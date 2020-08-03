@@ -84,7 +84,7 @@ async def mention_afk(mention):
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await mention.reply(
-                            "Masih Sibuk -_-"
+                            "Masih Sibuk"
                             f"\nReason: `{AFKREASON}`."
                             f"\nAFK from: {afk_str}"
                         )
@@ -153,7 +153,7 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(
-                        "Sedang Sibuk Gan."
+                        "Sedang Sibuk Gan"
                         f"\nReason: `{AFKREASON}`."
                         f"\nAFK since: {afk_str}"
                     )
@@ -165,7 +165,7 @@ async def afk_on_pm(sender):
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await sender.reply(
-                            "Masih Sibuk -_-”
+                            "Masih Sibuk"
                             f"\nReason: `{AFKREASON}`."
                             f"\nAFK from: {afk_str}"
                         )
