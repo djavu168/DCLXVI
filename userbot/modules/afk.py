@@ -85,7 +85,9 @@ async def mention_afk(mention):
             elif mention.sender_id in USERS:
                 if USERS[mention.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
-                        await mention.reply((AFKSTR)
+                        await mention.reply(
+                            "Away From Keyboard, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!\n\n"
+
                             "Masih Sibuk"
                             f"\nReason: `{AFKREASON}`."
                             f"\nAFK from: {afk_str}"
@@ -155,6 +157,8 @@ async def afk_on_pm(sender):
             if sender.sender_id not in USERS:
                 if AFKREASON:
                     await sender.reply(
+                        "Away From Keyboard, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!\n\n"
+
                         "Sedang Sibuk Gan"
                         f"\nReason: `{AFKREASON}`."
                         f"\nAFK since: {afk_str}"
@@ -167,6 +171,8 @@ async def afk_on_pm(sender):
                 if USERS[sender.sender_id] % randint(2, 4) == 0:
                     if AFKREASON:
                         await sender.reply(
+                            "Away From Keyboard, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!\n\n"
+
                             "Masih Sibuk"
                             f"\nReason: `{AFKREASON}`."
                             f"\nAFK from: {afk_str}"
