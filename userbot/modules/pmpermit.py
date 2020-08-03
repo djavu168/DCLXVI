@@ -25,7 +25,8 @@ UNAPPROVED_MSG = (
     "`Ini BOT ye, gue lagi gak on sekarang. Tunggu aja dulu\n\n`"
     "`Sabar nanti diapprove yee, Orang Sabar disayang Janda`"
     "`Ngopi aja dulu sambil nunggu dibales.\n\n`"
-    "`Jangan spam, tar ke blok xD`" )
+    "`Jangan spam, tar ke blok xD`" 
+)
 
 # =================================================================
 
