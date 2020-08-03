@@ -198,7 +198,7 @@ async def approvepm(apprvpm):
     except IntegrityError:
         return await apprvpm.edit("`User may already be approved.`")
 
-    await apprvpm.edit(f"[{name0}](tg://user?id={uid}) `approved to PM!`")
+    await apprvpm.edit(f"[{name0}](tg://user?id={uid}) `Pesan Di TERIMA!`")
 
     async for message in apprvpm.client.iter_messages(
         apprvpm.chat_id, from_user="me", search=UNAPPROVED_MSG
