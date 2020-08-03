@@ -71,7 +71,9 @@ async def mention_afk(mention):
                 afk_str = f"`{int(seconds)}s` ago"
             if mention.sender_id not in USERS:
                 if AFKREASON:
-                    await mention.reply((AFKSTR)
+                    await mention.reply(
+                        "Away From Keyboard, leave a message after the beep:\n`beeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeep`!\n\n"
+
                         "Sedang Sibuk Gan"
                         f"\nBecause I'm `{AFKREASON}`."
                         f"\nAFK since: {afk_str}"
